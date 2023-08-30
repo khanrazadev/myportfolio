@@ -144,33 +144,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Abhishek Gupta",
-    designation: "SDE-2",
-    company: "Fynd",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Surender Singh",
-    designation: "Co_founder",
-    company: "Pensil",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Anil meena",
-    designation: "CTO",
-    company: "Pensil",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "Fight Club",
@@ -200,6 +173,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/razakhan05/fightclub",
+    project_link: "https://newfightclub.vercel.app/",
   },
   {
     name: "Jarvis Ai",
@@ -241,6 +215,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/razakhan05/jarvis",
+    project_link: "https://jarvis-six-zeta.vercel.app/",
   },
   {
     name: "Hit Fit",
@@ -266,7 +241,8 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/razakhan05/hit-fit-club",
+    project_link: "https://hitfitclub.netlify.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
