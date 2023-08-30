@@ -12,7 +12,7 @@ const Tech = () => {
           className="w-28 h-28 flex flex-col justify-center items-center"
           key={technology.name}
         >
-          <BallCanvas icon={technology.icon} />
+          {/* <BallCanvas icon={technology.icon} /> */}
           <p className=" font-mono text-gray-500 whitespace-nowrap">
             {technology.name}
           </p>

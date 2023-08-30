@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
       {/* scroll down animation button  */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
