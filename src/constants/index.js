@@ -173,67 +173,99 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Fight Club",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "FightClub is a MERN web app for combat sports. Admin manages courses (CRUD), users view them. It's a full-stack site with advanced login, signup, and Razorpay-based subscriptions.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "MERN",
+        color: "green-text-gradient",
+      },
+      {
+        name: "chakra-ui",
+        color: "text-teal-500",
+      },
+      {
+        name: "chartjs",
+        color: "text-rose-500",
+      },
+      {
+        name: "redux",
+        color: "text-sky-500",
+      },
+      {
+        name: "razorpay",
+        color: "text-blue-500	",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/razakhan05/fightclub",
+  },
+  {
+    name: "Jarvis Ai",
+    description:
+      "A Next.js full-stack web app for diverse AI conversations: chat, image, video, music, and code generation. Advanced login, signup, protected routes, chat-bot and a subscription model—5 free subscriptions via Stripe integration, offering both free and paid options.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-gray-500",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-500	",
+      },
+      {
+        name: "prisma",
+        color: "text-gray-300",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "redux",
+        color: "text-sky-500",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-cyan-500",
+      },
+      {
+        name: "open-ai",
+        color: "text-slate-500	",
+      },
+      {
+        name: "stripe",
+        color: "text-gray-100",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: jobit,
+    source_code_link: "https://github.com/razakhan05/jarvis",
   },
   {
-    name: "Job IT",
+    name: "Hit Fit",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "HiFit is a web application built with React that serves as a virtual fitness club. It provides a comprehensive collection of exercises categorized by targeted body parts and types, encompassing both bodyweight and machine-assisted workouts. This all-inclusive platform offers a visually appealing and responsive web experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "material-ui",
+        color: "text-blue-500",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "rapid-api",
+        color: "text-gray-500",
+      },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/razakhan05/hit-fit-club",
   },
 ];
 
