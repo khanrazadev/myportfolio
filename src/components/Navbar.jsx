@@ -22,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="font-mono text-gray-300 text-[20px] cursor-pointer font-bold animate-pulse">
+          <p className=" font-mono text-gray-300 text-[25px] cursor-pointer font-bold animate-pulse">
             Raza Khan
           </p>
         </Link>
