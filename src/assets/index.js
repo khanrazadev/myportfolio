@@ -24,9 +24,9 @@ import threejs from "./tech/threejs.svg";
 import pensil from "./company/pensil.png";
 import fynd from "./company/fynd.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import fightclub from "./fightclub.png";
+import jarvis from "./jarvis.png";
+import hitfit from "./hitfit.png";
 
 export {
   logo,
@@ -52,7 +52,7 @@ export {
   threejs,
   pensil,
   fynd,
-  carrent,
-  jobit,
-  tripguide,
+  fightclub,
+  jarvis,
+  hitfit,
 };
