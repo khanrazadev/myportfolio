@@ -22,8 +22,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className=" font-mono text-gray-300 text-[18px] cursor-pointer font-bold">
-            Raza
+          <p className="font-mono text-gray-300 text-[20px] cursor-pointer font-bold animate-pulse">
+            Raza Khan
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
