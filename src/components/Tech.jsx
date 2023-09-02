@@ -1,8 +1,9 @@
-import React from "react";
-
-import { BallCanvas } from "./canvas";
+import React, { lazy, Suspense } from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { Loader } from "@react-three/drei";
+
+const BallCanvas = lazy(() => import("./canvas/Ball"));
 
 const Tech = () => {
   return (
@@ -12,8 +13,10 @@ const Tech = () => {
           className="w-28 h-28 flex flex-col justify-center items-center"
           key={technology.name}
         >
-          {/* <BallCanvas icon={technology.icon} /> */}
-          <p className=" font-mono text-gray-500 whitespace-nowrap">
+          <Suspense fallback={<Loader />}>
+            <BallCanvas icon={technology.icon} />
+          </Suspense>
+          <p className="font-mono text-gray-500 whitespace-nowrap">
             {technology.name}
           </p>
         </div>

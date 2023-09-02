@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index";
@@ -7,8 +6,13 @@ import { menu, close } from "../assets";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Navbar = () => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const handleToggle = (navTitle) => {
+    setActive(navTitle);
+    setToggle(!toggle);
+  };
 
   return (
     <nav
@@ -23,7 +27,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className=" font-mono text-gray-300 text-[25px] cursor-pointer font-bold animate-pulse">
+          <p className="font-mono text-gray-300 text-[25px] cursor-pointer font-bold animate-pulse">
             Raza Khan
           </p>
         </Link>
@@ -35,7 +39,7 @@ const Navbar = () => {
                 className={`${
                   active === nav.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => handleToggle(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
@@ -65,15 +69,12 @@ const Navbar = () => {
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
+                  onClick={() => handleToggle(nav.title)}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <div className=" flex gap-5 text-[#915EFF] animate-pulse cursor-pointer">
+              <div className="flex gap-5 text-[#915EFF] animate-pulse cursor-pointer">
                 <SocialLinks />
               </div>
             </ul>
@@ -101,4 +102,5 @@ const SocialLinks = () => (
     />
   </>
 );
+
 export default Navbar;
