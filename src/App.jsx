@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -15,6 +15,18 @@ const LazyWorks = React.lazy(() => import("./components/Works"));
 const LazyStarsCanvas = React.lazy(() => import("./components/canvas/Stars"));
 
 const App = () => {
+  // Use state to track whether to show the canvas
+  const [showCanvas, setShowCanvas] = useState(true);
+
+  // Detect Android device
+  useEffect(() => {
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    if (isAndroid) {
+      // Hide canvas on Android
+      setShowCanvas(false);
+    }
+  }, []);
+
   return (
     <BrowserRouter className="font-mono">
       <Toaster />
@@ -36,9 +48,11 @@ const App = () => {
             <LazyContact />
           </Suspense>
         </div>
-        <Suspense fallback={<Loader />}>
-          <LazyStarsCanvas />
-        </Suspense>
+        {showCanvas && (
+          <Suspense fallback={<Loader />}>
+            <LazyStarsCanvas />
+          </Suspense>
+        )}
       </div>
     </BrowserRouter>
   );

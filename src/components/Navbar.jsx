@@ -94,10 +94,7 @@ const SocialLinks = () => (
     />
     <BsLinkedin
       onClick={() =>
-        window.open(
-          "https://www.linkedin.com/in/raza-khan-109262247/",
-          "_blank"
-        )
+        window.open("https://www.linkedin.com/in/razakhan05/", "_blank")
       }
     />
   </>
