@@ -5,18 +5,6 @@ import { motion } from "framer-motion";
 const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
-  // Use state to track whether to show the canvas
-  const [showCanvas, setShowCanvas] = useState(true);
-
-  // Detect Android device
-  useEffect(() => {
-    const isAndroid = /Android/i.test(navigator.userAgent);
-    if (isAndroid) {
-      // Hide canvas on Android
-      setShowCanvas(false);
-    }
-  }, []);
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -39,11 +27,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {showCanvas && (
-        <Suspense fallback={<div>Loading...</div>}>
-          <ComputersCanvas />
-        </Suspense>
-      )}
+      <Suspense fallback={<div>Loading...</div>}>
+        <ComputersCanvas />
+      </Suspense>
 
       {/* scroll down animation button  */}
 
