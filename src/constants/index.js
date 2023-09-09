@@ -128,11 +128,11 @@ const experiences = [
     ],
   },
   {
-    title: "ReactJs Developer",
+    title: "Frontend Developer",
     company_name: "Pensil",
     icon: pensil,
     iconBg: "#383E56",
-    date: "Feb 2022 - Aug 2023",
+    date: "Feb 2023 - Aug 2023",
     points: [
       "Developed and maintained web apps for Pensil and its subsidiary companies, maintaining production-level quality from inception.",
       "Collaborated closely with Pensil teams to achieve project goals.",
