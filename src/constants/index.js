@@ -111,22 +111,7 @@ const technologies = [
     icon: next,
   },
 ];
-
 const experiences = [
-  {
-    title: "Blockchain Developer Trainee",
-    company_name: "Fynd",
-    icon: fynd,
-    iconBg: "#383E56",
-    date: "May 2022 - November 2022",
-    points: [
-      "Attained a comprehensive understanding of blockchain technology.",
-      "Created a fully functional Auction Bidding system smart contract on the Ethereum blockchain using Solidity.",
-      "Designed and implemented a Stake and Reward smart contract using the Solidity programming language.",
-      "Provided mentorship to junior team members, offering guidance and support for their projects.",
-      "Actively contributed to open-source projects led by the Sourabh Tech team.",
-    ],
-  },
   {
     title: "Frontend Developer",
     company_name: "Pensil",
@@ -140,6 +125,20 @@ const experiences = [
       "Successfully converted multiple Figma designs into functional web apps for the Pensil community.",
       "Successfully migrated existing codebase to TypeScript, enhancing code quality and maintainability.",
       "Contributed to backend development in coordination with senior backend developers, optimizing the existing backend codebase.",
+    ],
+  },
+  {
+    title: "Blockchain Developer Trainee",
+    company_name: "Fynd",
+    icon: fynd,
+    iconBg: "#383E56",
+    date: "May 2022 - November 2022",
+    points: [
+      "Attained a comprehensive understanding of blockchain technology.",
+      "Created a fully functional Auction Bidding system smart contract on the Ethereum blockchain using Solidity.",
+      "Designed and implemented a Stake and Reward smart contract using the Solidity programming language.",
+      "Provided mentorship to junior team members, offering guidance and support for their projects.",
+      "Actively contributed to open-source projects led by the Sourabh Tech team.",
     ],
   },
 ];
